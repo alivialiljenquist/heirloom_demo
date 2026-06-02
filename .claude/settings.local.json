@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:www.gilkeyrestaurantconsulting.com)",
+      "WebFetch(domain:www.heirloomgroup.com)",
+      "WebSearch",
+      "WebFetch(domain:www.facebook.com)",
+      "Bash(Get-ChildItem -Recurse \"C:\\\\Users\\\\alivi\\\\PORTFOLIO_PROJECTS\\\\heirloom_group_demo\")",
+      "Bash(Select-Object FullName, Length)"
+    ]
+  }
+}
