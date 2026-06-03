@@ -69,23 +69,3 @@ const sectionObserver = new IntersectionObserver(entries => {
 }, observerOptions);
 sections.forEach(s => sectionObserver.observe(s));
 
-// Reveal-on-scroll animation
-const revealEls = document.querySelectorAll(
-  '.service-card, .project-card, .team-card, .who-card, .process-step'
-);
-const revealObserver = new IntersectionObserver((entries, obs) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.style.opacity = '1';
-      entry.target.style.transform = 'translateY(0)';
-      obs.unobserve(entry.target);
-    }
-  });
-}, { threshold: 0.08 });
-
-revealEls.forEach(el => {
-  el.style.opacity = '0';
-  el.style.transform = 'translateY(24px)';
-  el.style.transition = 'opacity 0.55s ease, transform 0.55s ease';
-  revealObserver.observe(el);
-});
