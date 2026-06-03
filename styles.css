@@ -200,7 +200,7 @@ h1, h2, h3, h4 {
   display: flex; align-items: center;
   background-color: var(--color-bg-dark);
   background-size: cover; background-position: center top;
-  background-attachment: fixed;
+  background-attachment: scroll;
   padding-top: 72px; overflow: hidden;
 }
 .hero-bg-overlay {
@@ -382,7 +382,7 @@ h1, h2, h3, h4 {
     url('https://utahvalleybride.com/wp-content/uploads/2024/08/by-vendor-1.jpg');
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
+  background-attachment: scroll;
 }
 .approach-grid {
   display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-3xl); align-items: center;
@@ -557,7 +557,7 @@ h1, h2, h3, h4 {
 .image-break {
   position: relative; height: 440px;
   background-size: cover; background-position: center;
-  background-attachment: fixed;
+  background-attachment: scroll;
   display: flex; align-items: center; justify-content: center;
 }
 .image-break-overlay {
@@ -696,9 +696,7 @@ a.detail-value:hover { color: var(--color-accent-light); }
   .hero-actions  { flex-direction: column; }
   .footer-nav    { grid-template-columns: 1fr 1fr; }
   .photo-strip-track { height: 200px; }
-  .hero          { background-attachment: scroll; }
-  .approach      { background-attachment: scroll; }
-  .image-break   { background-attachment: scroll; height: 340px; }
+  .image-break   { height: 340px; }
   .image-break-quote { font-size: 1.25rem; }
   .process-grid  { flex-direction: column; gap: var(--space-md); }
   .process-step  { flex: unset; }
