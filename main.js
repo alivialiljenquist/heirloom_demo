@@ -53,7 +53,7 @@ if (form) {
 }
 
 // Smooth active-link highlight in nav on scroll
-const sections = document.querySelectorAll('section[id]');
+const sections = document.querySelectorAll('section[id], div[id]');
 const navAnchors = document.querySelectorAll('.nav-links a[href^="#"]');
 const observerOptions = { rootMargin: '-50% 0px -50% 0px', threshold: 0 };
 const sectionObserver = new IntersectionObserver(entries => {
@@ -71,7 +71,7 @@ sections.forEach(s => sectionObserver.observe(s));
 
 // Reveal-on-scroll animation
 const revealEls = document.querySelectorAll(
-  '.service-card, .project-card, .team-card, .testimonial-card, .pillar-card'
+  '.service-card, .project-card, .team-card, .who-card, .process-step'
 );
 const revealObserver = new IntersectionObserver((entries, obs) => {
   entries.forEach(entry => {
